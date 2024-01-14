@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet"  href="../bootstrap-5.3.2-dist/css/bootstrap.min.css"/>
+    <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    
+    <style>
+        @keyframes radiations {
+            0%{
+                /* outline: 6px solid white; */
+                box-shadow: 0px 0px 50px 50px orange;
+               }
+               40%{
+                /* outline: 10px solid white; */
+                box-shadow: 0px 0px 100px 50px orange;
+               }
+            100%{
+                box-shadow: 0px 0px 300px 80px orange;
+            }
+        }
+        .md{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .one{
+            z-index: -1;
+            margin-top: -10%;
+            width: 800px;
+            height: 800px;
+            background-color: white;
+            border-radius: 50%;
+            /* border-left: #ffa500 solid 50px; */
+            /* box-shadow: -30px -30px black; */
+            animation-name: radiations;
+            animation-duration: 5s;
+            /* animation-direction: reverse; */
+            animation-iteration-count: infinite;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            /* justify-content: space-around; */
+        }
+        .a2{flex-grow: 0.8;color: black;}
+        .a3{flex-grow: 0.3;color: black;opacity: 0.7;}
+        .a4{flex-grow: 0.3;color: black;opacity: 0.7;}
+        .a5{flex-grow: 0.3;color: black;opacity: 0.7;}
+        .a6{flex-grow: 0.8;color: black;opacity: 0.7;}
+        .a7{flex-grow: 0.2; color: black;}
+        .a8{flex-grow: 0;color: white;
+        background-color: rgb(240, 11, 11);border-radius: 20px;width: auto;padding: 10px;}
+        nav>a{
+            margin: 10px;
+            text-decoration: none;
+        }
+        .big_name,.b_big{
+            position: absolute;
+            font-size: 650%;
+            /* font-style: italic; */
+        }
+        .b_big>span{border-radius: 20px;padding: 5px;}
+        .md2{
+            border: white solid 1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .md21,.md22,.md23{position: absolute;}
+        .bgw:hover{
+            background-color: rgba(239, 12, 12, 0.726) !important;
+        }
+        .md23>div>h3:hover{
+            color: orangered !important;
+            font-size: ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="md1">
+        <nav>
+            <a class="a1"><img src="../images/icon.png" width="30px" height="40px"/></a>
+            <a class="a2" href=""><h3><b>mymind</b><sup>TM</sup></h3></a>
+            <a class="a3" href=""><span class="sp1"></span>WHAT</a>
+            <a class="a4" href=""><span class="sp2"></span>WHY</a>
+            <a class="a5" href=""><span class="sp3"></span>HOW</a>
+            <a class="a6" href=""><span class="sp4"></span>WHAT'S NEW</a>  
+            <a class="a7" href="">Login</a>
+            <a class="a8">SignUP</a>
+        </nav>
+        <div class="md"><div class="one"></div>
+        <h1 class="big_name">Remember everything.</h1>
+        <h1 class="big_name" style="top: 200px;">Organise nothing.</h1>
+        <div class="b_big" style="font-size: 20px; top: 400px;text-align: center;">All your <span style="color: orange; border: 1px solid orange;">Notes</span> <span style="color: rgb(226, 111, 130);border: 1px solid rgb(226, 111, 130);">Bookmarks</span> <span style="color: skyblue;border: 1px solid skyblue;">inspiration</span><br><br> <span style="color: red; border: 1px solid red;">articles</span> and <span style="color: rgb(137, 137, 0);border: 1px solid rgb(178, 178, 6);">images</span> in one single private place</div>
+    </div>
+    </div>
+    <div class="md2">
+        <div class="md21">
+            <video muted autoplay width="900px" style="z-index: -1;">
+                <source src="./vdo1.mp4" />
+            </video>
+        </div>
+        <div class="md22">
+            <div class="container mt-3">  
+                <button type="button" class="btn btn" data-bs-toggle="modal" data-bs-target="#myModal1">
+                          <div class="bgw" style="background-color: rgba(251, 250, 250, 0);width: 900px;height: 500px; z-index: 1;">
+                </button>
+              </div>
+              
+              <!-- The Modal -->
+              <div class="modal" id="myModal1">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <iframe width="720" height="330" src="https://www.youtube.com/embed/BM39sNvswNM?si=-GL2-lm-atxGZhCu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+        </div>
+        <div class="md23">
+            <div class="container mt-3">  
+                <button type="button" class="btn btn" data-bs-toggle="modal" data-bs-target="#myModal1">
+                <h3>watch the intro</h3>
+                </button>
+              </div>
+              
+              <!-- The Modal -->
+              <div class="modal" id="myModal1">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <iframe width="720" height="330" src="https://www.youtube.com/embed/BM39sNvswNM?si=-GL2-lm-atxGZhCu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+        </div>
+    </div>
+
+
+</body>
